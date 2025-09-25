@@ -1,7 +1,7 @@
 import 'package:stock_app/data/product.dart';
 import 'package:stock_app/repository/stock_repository.dart';
 
-class StockRepositoryDummyImpl implements StockRepository {
+class StockRepositoryDummyImpl extends StockRepository {
   @override
   List<Product> products = [
     Product("Notebooks",0),

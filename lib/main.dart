@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
+import 'package:stock_app/repository/stock_repository.dart';
+import 'package:stock_app/repository/stock_repository_dummy_impl.dart';
 import 'package:stock_app/view/stock_widget.dart';
 
 void main() {
+  GetIt.instance.registerSingleton<StockRepository>(StockRepositoryDummyImpl());
   runApp(const MyApp());
 }
 
